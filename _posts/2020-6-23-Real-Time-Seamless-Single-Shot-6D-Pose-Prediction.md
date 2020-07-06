@@ -28,7 +28,7 @@ The key component of this method is a new CNN architecturethat directly predicts
 
  Parameterize the 3D model of each object with 9 control points. For these control points, they select the 8 corners of the tight 3D bounding box fitted to the 3D model. In addition, they use the centroid of the object’s 3D model as the 9th point. 
 
-![CNN](/images/Seamless_CNN.png "CNN Architecture")
+![CNN](/assets/images/Seamless_CNN.png "CNN Architecture")
 
 This model takes as input a single full color image, processes it with a fully-convolutional architecture shown in Figure 1(a) and divides the image into a 2D regular grid containing S × S cells as shown in Figure 1(c). In their model, each grid location in the 3D output tensor will be associated with a multidimensional vector, consisting of predicted 2D image locations of the 9 control points, the class probabilities of the object and an overall confidence value. 
 
@@ -40,7 +40,7 @@ The predicted confidence value is modeled using a confidence function shown in F
 
     
 <div style="width:50%; margin:0 auto;" align="center" markdown="1">
-![formula](/images/Seamless_formula.png "confidence function")
+![formula](/assets/images/Seamless_formula.png "confidence function")
 </div>
 
 
@@ -49,7 +49,7 @@ The distance DT(x) is defined as the 2D Euclidean distance in the image space. I
 <!--![Confidence](/images/Seamless_confidence.png "Confidence function")-->
 
 <div style="width:50%; margin:0 auto;" align="center" markdown="1">
-![formula plot](/images/Seamless_confidence.png "confidence plot")
+![formula plot](/assets/images/Seamless_confidence.png "confidence plot")
 </div>
 
 #### Contribution of this paper
