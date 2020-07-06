@@ -26,7 +26,7 @@ The key component of this method is a new CNN architecturethat directly predicts
 
  Parameterize the 3D model of each object with 9 control points. For these control points, they select the 8 corners of the tight 3D bounding box fitted to the 3D model. In addition, they use the centroid of the object’s 3D model as the 9th point. 
 
-![CNN](/assets/images/Seamless_CNN.png "CNN Architecture")
+![CNN](/cover2.jpg "CNN Architecture")
 
 This model takes as input a single full color image, processes it with a fully-convolutional architecture shown in Figure 1(a) and divides the image into a 2D regular grid containing S × S cells as shown in Figure 1(c). In their model, each grid location in the 3D output tensor will be associated with a multidimensional vector, consisting of predicted 2D image locations of the 9 control points, the class probabilities of the object and an overall confidence value. 
 
@@ -38,7 +38,7 @@ The predicted confidence value is modeled using a confidence function shown in F
 
     
 <div style="width:50%; margin:0 auto;" align="center" markdown="1">
-![formula](/assets/images/Seamless_formula.png "confidence function")
+![formula](/assets/android-chrome-512x512.png "confidence function")
 </div>
 
 
@@ -59,6 +59,6 @@ In this paper, the method is accurate even without any a posteriori refinement.
 
 Moreover, this CNN architecture doesn't need a precise and detailed textured 3D object model.  Only  the 3D bounding box of the object shape is required for training. 
 
-[paper](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/1711.08848) &nbsp;        [github](https://link.zhihu.com/?target=https%3A//github.com/Microsoft/singleshotpose)
+[paper](https://arxiv.org/abs/1711.08848) &nbsp;        [github](https://github.com/Microsoft/singleshotpose)
 
-***Reference: B. Tekin, S. N. Sinha and P. Fua, "Real-Time Seamless Single Shot 6D Object Pose Prediction," 2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition, Salt Lake City, UT, 2018, pp. 292-301, doi: 10.1109/CVPR.2018.00038.***
+**Reference: B. Tekin, S. N. Sinha and P. Fua, "Real-Time Seamless Single Shot 6D Object Pose Prediction," 2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition, Salt Lake City, UT, 2018, pp. 292-301, doi: 10.1109/CVPR.2018.00038.**
