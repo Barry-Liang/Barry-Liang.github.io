@@ -28,6 +28,7 @@ The key component of this method is a new CNN architecturethat directly predicts
 
 ![CNN](/Seamless_CNN.png "CNN Architecture")
 <img class="image image--xl" src="/images/Seamless_CNN.png"/>
+<img width="737" alt="undisplay" src="/images/Seamless_CNN.png">
 
 This model takes as input a single full color image, processes it with a fully-convolutional architecture shown in Figure 1(a) and divides the image into a 2D regular grid containing S × S cells as shown in Figure 1(c). In their model, each grid location in the 3D output tensor will be associated with a multidimensional vector, consisting of predicted 2D image locations of the 9 control points, the class probabilities of the object and an overall confidence value. 
 
