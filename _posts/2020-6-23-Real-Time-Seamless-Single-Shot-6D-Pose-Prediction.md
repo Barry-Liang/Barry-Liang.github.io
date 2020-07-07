@@ -1,20 +1,23 @@
 ---
-layout: article
 title: 6D Pose Estimation Paper Review (1)
+key: 6D-Pose-Estimation-Paper Review-(1)
+tags:
+- 6D Pose Estimation
 mode: immersive
 header:
   theme: dark
 article_header:
-  type: cover
-  image:
-    src: /cover2.jpg
+  type: overlay
+  theme: dark
+  background_color: '#203028'
+  background_image:
+    gradient: 'linear-gradient(135deg, rgba(34, 139, 87 , .1), rgba(139, 34, 139, .1))'
+    src: assets/images/cover2.jpg
 ---
+
+
+
 ### Real-Time Seamless Single Shot 6D Object Pose Prediction:  
- 
-
-
-
-
 
 
 #### Introduction:
@@ -26,9 +29,10 @@ The key component of this method is a new CNN architecturethat directly predicts
 
  Parameterize the 3D model of each object with 9 control points. For these control points, they select the 8 corners of the tight 3D bounding box fitted to the 3D model. In addition, they use the centroid of the object’s 3D model as the 9th point. 
 
-![CNN](/Seamless_CNN.png "CNN Architecture")
-<img class="image image--xl" src="/images/Seamless_CNN.png"/>
-<img width="737" alt="undisplay" src="/images/Seamless_CNN.png">
+![CNN](/assets/images/Seamless_CNN.png){:width="650px" .shadow}
+
+<!--img class="image image--xl" src="/images/Seamless_CNN.png"/>
+<img width="737" alt="undisplay" src="/images/Seamless_CNN.png"-->
 
 This model takes as input a single full color image, processes it with a fully-convolutional architecture shown in Figure 1(a) and divides the image into a 2D regular grid containing S × S cells as shown in Figure 1(c). In their model, each grid location in the 3D output tensor will be associated with a multidimensional vector, consisting of predicted 2D image locations of the 9 control points, the class probabilities of the object and an overall confidence value. 
 
@@ -38,22 +42,25 @@ The output target values for the network are stored in a 3D tensor of size S × 
 
 The predicted confidence value is modeled using a confidence function shown in Figure 2. The confidence function, c(x), returns a confidence value for a predicted 2D point denoted by x based on its distance DT(x) from the ground truth i.e. target 2D point. 
 
-    
-<div style="width:50%; margin:0 auto;" align="center" markdown="1">
+![formula](/assets/images/Seamless_formula.png){:width="650px" .shadow}  
+
+<!--div style="width:50%; margin:0 auto;" align="center" markdown="1">
 ![formula](/Seamless_formula.png "confidence function")
 </div>
 
-<img class="image image--xl" src="/Seamless_formula.png"/>
+<img class="image image--xl" src="/Seamless_formula.png"/-->
 
 
 The distance DT(x) is defined as the 2D Euclidean distance in the image space. In practice, the confidence function of all the control points are calculated to the mean value and assigned as the confidence value
 
 <!--![Confidence](/images/Seamless_confidence.png "Confidence function")-->
 
-<div style="width:50%; margin:0 auto;" align="center" markdown="1">
+![confidence](/assets/images/Seamless_confidence.png){:width="350px" .shadow}
+
+<!--div style="width:50%; margin:0 auto;" align="center" markdown="1">
 ![formula plot](/Seamless_confidence.png "confidence plot")
 </div>
-<img class="image image--xl" src="/Seamless_confidence.png"/>
+<img class="image image--xl" src="/Seamless_confidence.png"/-->
 
 #### Contribution of this paper:
 
