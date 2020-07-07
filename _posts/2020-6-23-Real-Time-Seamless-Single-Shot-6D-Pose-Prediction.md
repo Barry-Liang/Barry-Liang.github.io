@@ -53,11 +53,11 @@ The predicted confidence value is modeled using a confidence function shown in F
 
 The distance DT(x) is defined as the 2D Euclidean distance in the image space. In practice, the confidence function of all the control points are calculated to the mean value and assigned as the confidence value
 
-<!--![confidence](/assets/images/Seamless_confidence.png){:width="350px" .shadow}-->
+![confidence](/assets/images/Seamless_confidence.png){:width="350px" .shadow}
 
-<div style="width:50%; margin:0 auto;" align="center" markdown="1">
+<!--div style="width:50%; margin:0 auto;" align="center" markdown="1">
 ![formula plot](/Seamless_confidence.png "confidence plot")
-</div>
+</div-->
 
 
 #### Contribution of this paper:
