@@ -42,7 +42,7 @@ The output target values for the network are stored in a 3D tensor of size S × 
 
 The predicted confidence value is modeled using a confidence function shown in Figure 2. The confidence function, c(x), returns a confidence value for a predicted 2D point denoted by x based on its distance DT(x) from the ground truth i.e. target 2D point. 
 
-![formula](/assets/images/Seamless_formula.png){:width="650px" .shadow}  
+![formula](/assets/images/cover2.jpg){:width="650px" .shadow}  
 
 <!--div style="width:50%; margin:0 auto;" align="center" markdown="1">
 ![formula](/Seamless_formula.png "confidence function")
