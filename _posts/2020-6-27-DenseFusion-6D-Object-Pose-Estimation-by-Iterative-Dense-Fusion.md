@@ -1,6 +1,6 @@
 ---
-title: 6D Pose Estimation Paper Review (1)                                
-key: The-6D-Pose-Estimation-Paper-Review-1
+title: 6D Pose Estimation Paper Review (2)                                
+key: The-6D-Pose-Estimation-Paper-Review-2
 tags:
 - 6D Pose Estimation
 mode: immersive

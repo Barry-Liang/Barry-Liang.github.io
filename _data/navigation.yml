@@ -47,4 +47,4 @@ header:
       fr-FR   : *FR
       fr-LU   : *FR
       # @end locale config
-    url: https://barry-liang.github.io/ #/about.html
+    url: https://barry-liang.github.io/resume #/about.html
