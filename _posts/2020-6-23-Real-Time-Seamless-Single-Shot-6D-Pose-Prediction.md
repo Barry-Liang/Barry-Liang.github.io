@@ -14,7 +14,7 @@ article_header:
     gradient: 'linear-gradient(135deg, rgba(34, 139, 87 , .1), rgba(139, 34, 139, .1))'
     src: assets/images/cover2.jpg
 ---
-This blog is the first one of the 6D pose estimation series. Here I  write a summary of the paper "Real-Time Seamless Single Shot 6D Object Pose prediction" from CVPR 2018. In addition, it is one of my assignments of the course "Visual Media Engineering" at the University of Tokyo.                  
+This is the first blog  of the 6D pose estimation series. Here I  write a summary of the paper "Real-Time Seamless Single Shot 6D Object Pose prediction" from CVPR 2018. In addition, it is one of my assignments of the course "Visual Media Engineering" at the University of Tokyo.                  
 
 ## Introduction:
 This paper introduces a single-shot approach for simultaneously detecting an object in an RGB image and predicting its 6D pose without requiring multiple stages or having to examine multiple hypotheses. This method is accurate enough not to require additional post-processing.

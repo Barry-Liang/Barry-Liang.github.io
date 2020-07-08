@@ -8,7 +8,7 @@ header:
 article_header:
   type: cover
   image:
-    src: assets/images/cover2.jpg
+    src: /assets/images/cover1.jpg
 
 ---
 ## A summary of 6D pose estimation
