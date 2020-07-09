@@ -13,7 +13,7 @@ article_header:
   background_color: '#000000'   
   background_image:
     gradient: 'linear-gradient(135deg, rgba(34, 139, 87 , .1), rgba(139, 34, 139, .1))'
-    src: assets/images/cover3.jpg
+    src: assets/images/cover5.jpg
 ---
 <!--#203028-->
 This is the second blog of the "6D pose estimation paper review" series. Here I  write a summary of the paper "DenseFusion: 6D Object Pose Estimation by Iterative Dense Fusion" from CVPR 2019. In addition, it is one of my assignments of the course "Visual Media Engineering" at the University of Tokyo.                  

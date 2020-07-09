@@ -12,7 +12,7 @@ article_header:
   background_color: '#000000'
   background_image:
     gradient: 'linear-gradient(135deg, rgba(34, 139, 87 , .1), rgba(139, 34, 139, .1))'
-    src: assets/images/cover2.jpg
+    src: assets/images/cover6.jpg
 ---
 This is the first blog  of the 6D pose estimation series. Here I  write a summary of the paper "Real-Time Seamless Single Shot 6D Object Pose prediction" from CVPR 2018. In addition, it is one of my assignments of the course "Visual Media Engineering" at the University of Tokyo.                  
 
