@@ -40,7 +40,7 @@ A 6D pose is composed by a rotation $$R$$ ∈ SO(3) and a translation $$t$$ ∈ 
 </div>
 
 Figure 2 represents the CNN architecture of DenseFusion. Based on this model, I will explain each stage step by step.
-### Semantic Segmentatio
+### Semantic Segmentation
 
 The first stage is **Semantic Segmentation**, which takes color image as input and performs semantic segmentation for each known object category. An N+1-channelled semantic segmentation map is generated. Each channel is a binary mask where active pixels depict objects of each of the N possible known classes. Then, for each segmented object, the masked depth pixels (converted to 3D point cloud) as well as an image patch cropped by the bounding box of the mask are fed to the second stage.
 
