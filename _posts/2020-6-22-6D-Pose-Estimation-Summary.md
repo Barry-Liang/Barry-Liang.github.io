@@ -25,6 +25,6 @@ Traditional RGB object instance recognition and pose estimation works used local
 
 ### Others:
 
-### To be continued......
+### To be continued....
 ---- 
 
